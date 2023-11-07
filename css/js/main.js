@@ -1,3 +1,5 @@
+/* script.js */
+
 function initCarousel() {
     const carousel = document.querySelector(".carousel");
     const slides = carousel.querySelector(".slides");
@@ -8,9 +10,9 @@ function initCarousel() {
     controls.querySelectorAll("button").forEach((button) => {
         button.addEventListener("click", () => {
             if (button.classList.contains("prev")) {
-                currentSlideIndex = (currentSlideIndex - 1 + 3) % 3;
+                currentSlideIndex = (currentSlideIndex - 1 + 3) % 5;
             } else {
-                currentSlideIndex = (currentSlideIndex + 1) % 3;
+                currentSlideIndex = (currentSlideIndex + 1) % 5;
             }
             showSlide(currentSlideIndex);
         });
@@ -26,10 +28,17 @@ function initCarousel() {
         });
     }
 
-    setInterval(() => {
-        currentSlideIndex = (currentSlideIndex + 1) % 3;
-        showSlide(currentSlideIndex);
-    }, 3000);
+    showSlide(currentSlideIndex);
 }
 
 window.addEventListener("load", initCarousel);
+
+function handleImageClick(event) {
+    const target = event.target;
+    const url = target.dataset.url;
+    window.location.href = url;
+}
+
+slides.querySelectorAll(".image").forEach((image) => {
+    image.addEventListener("click", handleImageClick);
+});
