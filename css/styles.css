@@ -1,0 +1,42 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    margin-right: 10px;
+}
+
+.about {
+    padding: 20px;
+}
+
+.projects {
+    padding: 20px;
+}
+
+.carousel {
+    display: flex;
+    overflow-x: auto;
+}
+
+.project-slide {
+    flex: 0 0 300px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.project-slide img {
+    max-width: 100%;
+}
