@@ -3,56 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portfólio</title>
+    <title>Lucas Palmeira</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
         <h1>Lucas Sousa Palmeira</h1>
-        <div class="social-links">
-            <a href="https://www.linkedin.com/in/lucaspalmeira/" target="_blank"><img src="img/linkedin-icon.svg" alt="LinkedIn" width="25" height="25"></a>
-            <a href="https://github.com/lucaspalmeira" target="_blank"><img src="img/github-icon.svg" alt="GitHub" width="25" height="25"></a>
-            <a href="http://lattes.cnpq.br/0319366878663866" target="_blank"><img src="img/lattes.png" alt="Lattes" width="25" height="25"></a>
-            <a href="https://www.instagram.com/ls_palmeira/" target="_blank"><img src="img/instagram-icon.svg" alt="Instagram" width="25" height="25"></a>
-        </div>
+        <h2>I'm Bioinformatician</h2>
+        <nav>
+            <ul class="social-links">
+                <li><a href="https://www.linkedin.com/in/lucaspalmeira/" target="_blank" aria-label="LinkedIn"><img src="img/linkedin-icon.svg" alt="LinkedIn" width="25" height="25"></a></li>
+                <li><a href="https://github.com/lucaspalmeira" target="_blank" aria-label="GitHub"><img src="img/github-icon.svg" alt="GitHub" width="25" height="25"></a></li>
+                <li><a href="http://lattes.cnpq.br/0319366878663866" target="_blank" aria-label="Lattes"><img src="img/lattes.png" alt="Lattes" width="25" height="25"></a></li>
+                <li><a href="https://www.instagram.com/ls_palmeira/" target="_blank" aria-label="Instagram"><img src="img/instagram-icon.svg" alt="Instagram" width="25" height="25"></a></li>
+            </ul>
+        </nav>
     </header>
 
     <section class="about">
-        <h2>Sobre Mim</h2>
-        <p>Sou um entusiasta de Bioinformática Estrutural e Machine Learning (IA). Graduado em Licenciatura em Ciências Biológicas pela UESB, atualmente sou mestrando em Bioinformática no PPGBIOINFO - UFMG e membro do Laboratório de Bioinformática e Química Computacional (LBQC- UESB).</p>
+        <h2>ABOUT</h2>
+        <p>I am an enthusiast of Structural Bioinformatics and Machine Learning (AI). Graduated with a degree in Biological Sciences Education from UESB, I am currently pursuing a master's degree in Bioinformatics at PPGBIOINFO - UFMG, and I am a member of the Laboratory of Bioinformatics and Computational Chemistry (LBQC-UESB).
+        </p>
     </section>
 
-    <section class="projects">
-    <h2>Projetos Colaborativos</h2>
-    <div class="carousel">
-        <div class="project-slide" id="slide1">
-            <img src="img/projeto1.png" alt="Imagem 1" class="image active" data-index="0" data-url="https://github.com/lucaspalmeira">
-            <h3>Projeto 1</h3>
-            <p>Descrição do projeto 1.</p>
+<section id="simpleSection" class="simple-section">
+    <div class="container">
+        <div class="section-title">
+            <h2>CODDING</h2>
+            <p>Repositories of tools or scripts that I've developed and are publicly available.</p>
         </div>
-        <div class="project-slide" id="slide2">
-            <img src="img/projeto2.jpg" alt="Imagem 2" class="image" data-index="1" data-url="https://github.com/lucaspalmeira">
-            <h3>Projeto 2</h3>
-            <p>Descrição do projeto 2.</p>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="content-box">
+                    <img src="img/projeto1.png" alt="Descrição da imagem">
+                    <h4><a href="https://github.com/lucaspalmeira/BioPep">BioPep</a></h4>
+                    <p>Search, molecular modeling and molecular docking of peptides.</p>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="content-box">
+                    <img src="img/projeto2.jpg" alt="Descrição da imagem">
+                    <h4><a href="https://github.com/lucaspalmeira/AMPs">AMP's</a></h4>
+                    <p>Machine learning for predicting the activity of antimicrobial peptides.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="content-box">
+                    <img src="img/projeto3.jpg" alt="Descrição da imagem">
+                    <h4><a href="https://github.com/lucaspalmeira/Bio-learning">Bio-Learning</a></h4>
+                    <p>Development of Cookbooks for Teaching Bioinformatics in Life Sciences Undergraduate Courses</p>
+                </div>
+            </div>
         </div>
-        <div class="project-slide" id="slide3">
-            <img src="img/projeto3.jpg" alt="Imagem 3" class="image" data-index="2" data-url="https://github.com/lucaspalmeira">
-            <h3>Projeto 3</h3>
-            <p>Descrição do projeto 3.</p>
-        </div>
-        <div class="project-slide" id="slide4">
-            <img src="img/projeto4.jpg" alt="Imagem 4" class="image" data-index="3" data-url="https://github.com/lucaspalmeira">
-            <h3>Projeto 4</h3>
-            <p>Descrição do projeto 4.</p>
-        </div>
-        <div class="project-slide" id="slide5">
-            <img src="img/projeto5.jpg" alt="Imagem 5" class="image" data-url="https://github.com/lucaspalmeira">
-            <h3>Projeto 5</h3>
-            <p>Descrição do projeto 5.</p>
-        </div>
-        </div>
-    <div class="carousel-navigation">
-        <button id="prevButton">Anterior</button>
-        <button id="nextButton">Próximo</button>
     </div>
 </section>
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <h3>© 2023 Lucas Palmeira</h3>
+        </div>
+
+        <div class="paragraph"><p>Romanos 12.2</p></div>
+
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/lucaspalmeira/" target="_blank" aria-label="LinkedIn"><img src="img/linkedin-icon.svg" alt="LinkedIn" width="25" height="25"></a>
+            <a href="https://github.com/lucaspalmeira" target="_blank" aria-label="GitHub"><img src="img/github-icon.svg" alt="GitHub" width="25" height="25"></a>
+            <a href="http://lattes.cnpq.br/0319366878663866" target="_blank" aria-label="Lattes"><img src="img/lattes.png" alt="Lattes" width="25" height="25"></a>
+            <a href="https://www.instagram.com/ls_palmeira/" target="_blank" aria-label="Instagram"><img src="img/instagram-icon.svg" alt="Instagram" width="25" height="25"></a>
+        </div>
+
+        <div class="credit"> Designed by<a href="https://github.com/lucaspalmeira"> Lucas Palmeira </a></div>
+    </div>
+</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
