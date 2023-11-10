@@ -6,7 +6,7 @@ body{
 
 header{
     text-align: center;
-    background-color: #035959;
+    background-color: #0f816f;
     color: white;
     padding: 20px;
 }
@@ -39,9 +39,42 @@ nav ul{
 
 .about{
     text-align: center;
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
     padding: 40px;
+}
+
+.title-underline {
+    width: 55px; /* Largura da linha */
+    height: 1px; /* Espessura da linha */
+    background-color: #000; /* Cor da linha (preto neste exemplo) */
+    margin-top: 10px; /* Espaço entre o título e a linha */
+    margin: 10px auto 40px; /* Alinhar horizontalmente no centro */
+}
+
+.about p{
+    text-align: justify;
+    line-height: 1.5; /* Ajuste o valor conforme necessário */
+}
+
+.profile-image {
+    float: left;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0%; /* Bordas arredondadas para criar uma imagem circular */
+    width: 300px; /* Largura da imagem */
+    height: 300px; /* Altura da imagem */
+    margin: 0 auto; /* Centraliza a imagem horizontalmente */
+    border: 5px solid #fff; /* Adiciona uma borda branca */
+    margin-right: 30px;
+    margin-top: 60px;
+    margin-bottom: 120px;
+}
+
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Redimensiona a imagem para preencher o contêiner circular */
 }
 
 .simple-section {
