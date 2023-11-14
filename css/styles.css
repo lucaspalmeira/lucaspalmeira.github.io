@@ -44,10 +44,6 @@ nav ul{
     padding: 40px;
 }
 
-.about{
-
-}
-
 .title-underline {
     width: 55px; /* Largura da linha */
     height: 1px; /* Espessura da linha */
@@ -119,22 +115,65 @@ nav ul{
     margin-bottom: 10px; /* Espaçamento inferior para a imagem */
 }
 
+.skills p {
+    margin-bottom: 40px;
+}
+
+
 .skill-icons {
     display: flex;
     flex-wrap: wrap;
 }
 
 .skill-icon {
-    width: 33.33%; /* Para 3 colunas em uma linha */
+    width: 25%; /* Para 3 colunas em uma linha */
     text-align: center;
     margin-bottom: 20px; /* Espaçamento entre os ícones */
 }
 
 .skill-icon img {
-    width: 100px; /* Largura do ícone */
-    height: 100px; /* Altura do ícone */
+    width: 50px; /* Largura do ícone */
+    height: 50px; /* Altura do ícone */
 }
 
+.skill-icon p {
+    font-size: 10px; /* Tamanho da fonte para os parágrafos */
+    font-weight: bold; /* Texto em negrito */
+    color: #095548; /* Cor do texto (no exemplo, vermelho) */
+    font-family: "Poppins", sans-serif;
+}
+
+.resume {
+  max-width: 900px;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto; /* Isso aplica margens automáticas para centralizar horizontalmente */
+}
+
+.education, .experience {
+  flex: 1;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: justify;
+}
+
+.graduation,
+.master {
+  border-left: 2px solid #333; /* Estilo da borda esquerda */
+  padding-left: 10px; /* Espaçamento entre o texto e a borda */
+  margin-left: 10px; /* Espaçamento entre a borda e o conteúdo */
+  position: relative; /* Permite posicionar elementos filhos relativos a esta div */
+}
+
+.graduation::before, .master::before {
+  content: '';
+  position: absolute;
+  width: 2px;
+  background-color: #333;
+  top: 0;
+  left: -5px; /* Posição ajustada para se conectar à linha de tempo */
+  bottom: 0;
+}
 
 footer {
     background-color: #333; /* Cor de fundo do footer */
