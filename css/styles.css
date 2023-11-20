@@ -8,7 +8,16 @@ header{
     text-align: center;
     background-color: #0f816f;
     color: white;
-    padding: 20px;
+    padding: 250px;
+}
+
+header {
+    background: linear-gradient(
+    135deg,
+    rgba(16,158,138,1) 0%,
+    rgba(0,0,0,1) 33%,
+    rgba(26,26,26,1) 78%,
+    rgba(43,43,43,1) 100%);
 }
 
 header h1{
@@ -115,6 +124,10 @@ nav ul{
     margin-bottom: 10px; /* Espaçamento inferior para a imagem */
 }
 
+.skills {
+    padding: 60px 0;
+}
+
 .skills p {
     margin-bottom: 40px;
 }
@@ -144,35 +157,44 @@ nav ul{
 }
 
 .resume {
-  max-width: 900px;
-  display: flex;
-  flex-direction: row;
-  margin: 0 auto; /* Isso aplica margens automáticas para centralizar horizontalmente */
+    margin: 0 auto;
+    padding: 60px 0;
+    text-align: center;
+    background-color: #f8f8f8;
 }
 
-.education, .experience {
-  flex: 1;
-  padding: 20px;
-  box-sizing: border-box;
-  text-align: justify;
+.timeline {
+    max-width: 900px;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto; /* Isso aplica margens automáticas para centralizar horizontalmente */
+    padding-bottom: 4em;
 }
 
-.graduation,
-.master {
-  border-left: 2px solid #333; /* Estilo da borda esquerda */
-  padding-left: 10px; /* Espaçamento entre o texto e a borda */
-  margin-left: 10px; /* Espaçamento entre a borda e o conteúdo */
-  position: relative; /* Permite posicionar elementos filhos relativos a esta div */
+.education-timeline, .experience-timeline {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: justify;
 }
 
-.graduation::before, .master::before {
-  content: '';
-  position: absolute;
-  width: 2px;
-  background-color: #333;
-  top: 0;
-  left: -5px; /* Posição ajustada para se conectar à linha de tempo */
-  bottom: 0;
+.item {
+    padding: 0 0 20px 20px;
+    margin-top: -2px;
+    border-left: 2px solid #0563bb;
+    position: relative;
+    margin-bottom: -50px; /* Ajuste o valor conforme necessário */
+}
+
+.item::before {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 50px;
+    left: -9px;
+    background: #fff;
+    border: 2px solid #0563bb;
 }
 
 footer {
