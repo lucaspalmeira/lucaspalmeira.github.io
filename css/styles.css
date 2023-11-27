@@ -51,6 +51,7 @@ nav ul{
     max-width: 900px;
     margin: 0 auto;
     padding: 40px;
+    color: #095548;
 }
 
 .title-underline {
@@ -64,6 +65,7 @@ nav ul{
 .about p{
     text-align: justify;
     line-height: 1.5; /* Ajuste o valor conforme necessário */
+    color: black;
 }
 
 .profile-image {
@@ -100,6 +102,7 @@ nav ul{
 .section-title {
     text-align: center;
     margin-bottom: 40px;
+    color: #095548;
 }
 
 .content-box {
@@ -126,6 +129,7 @@ nav ul{
 
 .skills {
     padding: 60px 0;
+    color: #095548;
 }
 
 .skills p {
@@ -161,6 +165,7 @@ nav ul{
     padding: 60px 0;
     text-align: center;
     background-color: #f8f8f8;
+    color: #095548;
 }
 
 .timeline {
@@ -179,11 +184,12 @@ nav ul{
 }
 
 .item {
-    padding: 0 0 20px 20px;
+    padding: 0 0 5px 20px;
     margin-top: -2px;
-    border-left: 2px solid #0563bb;
+    border-left: 2px solid #095548;
     position: relative;
-    margin-bottom: -50px; /* Ajuste o valor conforme necessário */
+    margin-bottom: -30px; /* Ajuste o valor conforme necessário */
+    color: black;
 }
 
 .item::before {
@@ -194,7 +200,18 @@ nav ul{
     border-radius: 50px;
     left: -9px;
     background: #fff;
-    border: 2px solid #0563bb;
+    border: 2px solid #095548;
+}
+
+.publications {
+    margin: 0 auto;
+    padding: 60px 0;
+    text-align: center;
+    color: #095548;
+}
+
+.publications p {
+    margin-bottom: 40px;
 }
 
 footer {
