@@ -15,9 +15,9 @@ header {
     background: linear-gradient(
     135deg,
     rgba(16,158,138,1) 0%,
-    rgba(0,0,0,1) 33%,
-    rgba(26,26,26,1) 78%,
-    rgba(43,43,43,1) 100%);
+    #0f816f 33%,
+    rgb(136, 136, 136) 78%,
+    rgb(136, 136, 136) 100%);
 }
 
 header h1{
