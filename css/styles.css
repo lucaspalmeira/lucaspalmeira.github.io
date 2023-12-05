@@ -4,31 +4,32 @@ body{
     padding: 0;
 }
 
-header{
-    text-align: center;
-    background-color: #0f816f;
-    color: white;
-    padding: 250px;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 header {
-    background: linear-gradient(
-    135deg,
-    rgba(16,158,138,1) 0%,
-    #0f816f 33%,
-    rgb(136, 136, 136) 78%,
-    rgb(136, 136, 136) 100%);
+    text-align: left;
+    padding: 250px;
+    background-image: url('../img/header.png');
+    background-size: 50% 57%; /* Isso garante que a imagem cubra todo o elemento */
+    background-position: 80% center; /* Centraliza a imagem no elemento */
+    background-repeat: no-repeat; /* Evita repetir a imagem */
 }
 
-header h1{
+header h1 {
     font-family: Raleway, sans-serif;
     margin: 0;
     font-size: 40px;
+    color: #095548; /* Adiciona uma cor ao texto para garantir legibilidade no plano de fundo */
 }
 
-header h2{
+header h2 {
     font-family: Poppins, sans-serif;
     font-size: 20px;
+    color: #095548; /* Adiciona uma cor ao texto para garantir legibilidade no plano de fundo */
 }
 
 nav ul{
@@ -38,7 +39,7 @@ nav ul{
 
 .social-links{
     display: flex;
-    justify-content: center;
+    justify-content: left;
     margin-top: 10px;
 }
 
