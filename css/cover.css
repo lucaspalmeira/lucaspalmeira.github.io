@@ -184,6 +184,10 @@ body {
   line-height: 1.5;
 }
 
+.state {
+  text-align: justify;
+}
+
 .content-box {
     background-color: #545454;
     padding: 20px;
