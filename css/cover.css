@@ -119,10 +119,6 @@ body {
   font-style: italic;
 }
 
-.projects {
-  padding: 60px 0;
-}
-
 .skills {
     padding: 60px 0;
 }
@@ -149,4 +145,49 @@ body {
 .about p {
   text-align: justify;
   line-height: 1.5;
+}
+
+.about li {
+  text-align: justify;
+  line-height: 1.5;
+}
+
+.heading {
+  padding: 60px 0;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+.container {
+  text-align: justify;
+  line-height: 1.5;
+}
+
+.projects-icon {
+    width: 25%; /* Para 3 colunas em uma linha */
+    text-align: left;
+    margin-bottom: 20px; /* Espaçamento entre os ícones */
+}
+
+.projects-icon img {
+    width: 50px; /* Largura do ícone */
+    height: 50px; /* Altura do ícone */
+}
+
+.projects-icons {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.title-project {
+  text-align: justify;
+  line-height: 1.5;
+}
+
+.content-box {
+    background-color: #545454;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
