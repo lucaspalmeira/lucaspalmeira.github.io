@@ -1,77 +1,67 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Resumo profissional e formação de Lucas Palmeira.">
     <link rel="icon" href="img/logo.png">
-
-    <title>Lucas Palmeira</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="css/cover.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/cover.css">
+    <title>Sobre | Lucas Palmeira</title>
   </head>
-
-  <body class="text-center">
-
-    <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
-      <header class="masthead mb-auto">
-        <div class="inner">
-          <a href="https://lucaspalmeira.github.io/">
-            <img src="img/logo.png" class="masthead-brand">
-          </a>
-          <nav class="nav nav-masthead justify-content-center">
-            <a class="nav-link active" href="about.html">Sobre</a>
-            <a class="nav-link" href="projects.html">Projetos</a>
-            <a class="nav-link" href="skills.html">Habilidades</a>
-          </nav>
-        </div>
+  <body>
+    <div class="site-wrap">
+      <header class="masthead">
+        <a class="brand" href="index.html">
+          <img src="img/logo.png" alt="Logo Lucas Palmeira">
+          <span>Lucas Palmeira</span>
+        </a>
+        <button class="nav-toggle" data-nav-toggle aria-expanded="false" aria-label="Abrir menu">☰</button>
+        <nav class="nav" data-nav>
+          <a href="index.html">Início</a>
+          <a class="active" href="about.html">Sobre</a>
+          <a href="projects.html">Experiência</a>
+          <a href="skills.html">Skills</a>
+        </nav>
       </header>
 
-      <main role="main" class="inner cover">
-        <h1 class="cover-heading">Sobre mim</h1>
-        <p class="lead">Biólogo, Bioinformata e Desenvolvedor Python</p>
+      <main>
+        <section class="section">
+          <h2>Resumo</h2>
+          <article class="card">
+            <p>
+              Professor de Tecnologia e Desenvolvedor Backend com experiência no ensino de robótica educacional usando LEGO Spike,
+              Scratch e Python por meio da metodologia STEAM. Também atuo como Engenheiro de IA com foco em aprendizado de máquina,
+              engenharia de dados e computação científica de alto desempenho.
+            </p>
+            <p>
+              Sou mestrando em Bioinformática pela UFMG e criador do FUNIN DataBase, plataforma em Python/Flask/MongoDB/Docker para
+              curadoria de dados biológicos e otimização orientada por IA. Minha atuação combina pipelines ELT, APIs RESTful,
+              aprendizado profundo (PyTorch/TensorFlow) e implantação em nuvem com AWS EC2.
+            </p>
+          </article>
+        </section>
 
-        <section class="about">
-          <p>
-              Olá, sou o Lucas Palmeira e desde 2020 venho imerso no mundo da programação. Inicialmente, meus estudos eram direcionados para atender as demandas dos projetos em que estava envolvido durante minha graduação em um laboratório. No entanto, ao longo do tempo, essa atividade se transformou em uma paixão pessoal, e hoje em dia me divirto resolvendo problemas por meio da programação.
-          </p>
-
-          <p>
-              Atualmente, estou envolvido no desenvolvimento de um banco de dados de enzimas, especializado na degradação de frutanos de Agave, como parte do meu projeto de mestrado. Paralelamente, estou construindo uma aplicação web que servirá como interface para este banco de dados, tornando-o público. Além disso, pretendo utilizar os dados do banco para alimentar modelos de Machine Learning que irei implementar.
-          </p>
-          <p>
-              Agora que contei um pouco sobre mim, deixarei algumas informações do meu currículo:
-              <li>Graduado em Ciências Biológicas pela Universidade Estadual do Sudoeste da Bahia</li>
-              <li>Mestrando em Bioinformática pela Universidade Federal de Minas Gereais</li>
-              <li>Bolsista de Desenvolvimento Industrial Tecnológico do CNPq</li>
-          </p>
-          <p>
-              Em meu <a href="https://www.linkedin.com/in/lucaspalmeira/">Linkedin</a> você poderá encontrar mais informações ou se desejar pode estar acessando também o meu currículo <a href="http://lattes.cnpq.br/0319366878663866">Lattes</a>.
-          </p>
+        <section class="section">
+          <h2>Educação</h2>
+          <div class="timeline">
+            <article class="timeline-item">
+              <h3>Mestrado em Bioinformática — UFMG</h3>
+              <p class="timeline-meta">Belo Horizonte, MG | 08/2023 – 07/2026</p>
+              <p class="muted">Dissertação: Inteligência artificial aplicada à otimização de inulinases para produção de bioetanol de agave.</p>
+            </article>
+            <article class="timeline-item">
+              <h3>Bacharelado em Ciências Biológicas — UESB</h3>
+              <p class="timeline-meta">Jequié, BA | 07/2018 – 07/2023</p>
+              <p class="muted">TCC: Desenvolvimento de cookbooks para ensino de bioinformática em cursos de ciências da vida.</p>
+            </article>
+          </div>
         </section>
       </main>
 
-      <footer class="mastfoot mt-auto">
-        <div class="inner">
-          <p>© 2024 Lucas Palmeira</p>
-          <p class='bible'>No princípio era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus. João 1:1</p>
-          <p>Designed by <a href="https://www.instagram.com/ls_palmeira/">Lucas Palmeira</a>.</p>
-        </div>
+      <footer>
+        <p>Contato: +55 73 98135-2952 • lspalmeira.bio@gmail.com</p>
       </footer>
     </div>
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-    <script src="../../../../assets/js/vendor/popper.min.js"></script>
-    <script src="../../../../dist/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
