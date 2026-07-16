@@ -83,6 +83,34 @@ a:focus {
   gap: 1rem;
 }
 
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.language-switcher {
+  display: flex;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.language-switcher button {
+  border: 0;
+  background: var(--panel-soft);
+  color: var(--muted);
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.78rem;
+  padding: 0.4rem 0.55rem;
+}
+
+.language-switcher button.active {
+  background: #0e2430;
+  color: var(--accent);
+}
+
 .nav a {
   color: var(--muted);
   border-bottom: 2px solid transparent;
@@ -228,6 +256,31 @@ a:focus {
 .tool-item small {
   font-size: 0.78rem;
 }
+
+.tool-logo-grid {
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+
+.tool-logo {
+  display: flex;
+  flex: 1 1 145px;
+  min-height: 116px;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background: linear-gradient(160deg, var(--panel) 0%, #0b0b0b 100%);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+.tool-logo img {
+  display: block;
+  max-width: 100%;
+  max-height: 70px;
+  object-fit: contain;
+}
 footer {
   margin-top: 2rem;
   border-top: 1px solid var(--border);
@@ -244,6 +297,10 @@ footer {
 
   .nav-toggle {
     display: inline-block;
+    margin-left: auto;
+  }
+
+  .header-actions {
     margin-left: auto;
   }
 
